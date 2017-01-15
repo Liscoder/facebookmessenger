@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 
-const APP_TOKEN = 'EAADpCPysCBIBANLRMShTrgpPbCxiMZC0If8OMOL0cF2LdMZCGGW3Gr9BMT6LWSPyafRWCJC04ZAqbbXLCY4Xo8PJtbILRns3NqVeERqTT3W42bzoYbVRDSg6fAhr2vkI9l3ZBAjb1WFnuHRuDxCTVEnZBu1acu2Vo65y3TtotHIAg4aflZArrk'
+const APP_TOKEN = 'EAADpCPysCBIBAH5gMerm8V3Edm0FjLHpDeEzo53NXwlNKwVjf6JPUwm0U3WSduNv4ZAppgI3ZACsNTLAGZCmZCwoZANMHK3VdKXL2ZC06ds1ZBXrDOyFHoZCucDWiEZA0d7F0o726KjhqIBxw8hzHOGM4Iv0m4uqxa1Yb7CQ0yTB2d0sFCRyQxqBG'
 
 var app = express()
 app.use(bodyParser.json())
