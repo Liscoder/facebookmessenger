@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 
-const APP_TOKEN = 'EAARvWN4pab0BAPZB4qo6ZBhIAeOSbksyguyrONgPjvNKQmocDyuiZBz7PIJRwK7d6k9KLSVWiizCCkR0qO0O8ZCFOiZBuWsCzN8N1ZAwUwreAIJyP9Eo7NzOkBoxZBMIBadG1jvTXL2zS1FKc1j3qDIHZCEmJ1NPykTNAr4TgkedUAZDZD'
+const APP_TOKEN = 'EAARvWN4pab0BAJsYtnpZCCiV7e3hZCSM7ZAOcyO7HIi6xnRDlltYJw2lZB6VClRHK3Q65WFRpkpCnLCfdLxcsOyWl4G8h5rTSHIx3LP9NQtugHpN1u4Wc27n4txhsRbxLJStA0e3PZABreSFY5ZARWZAIsa6Ki8Uzx7iRfCnq6qcgZDZD'
 
 var app = express()
 app.use(bodyParser.json())
@@ -53,7 +53,7 @@ function evaluarMensaje(senderID, messageText){
 	if(isContain(messageText, 'urgente')){
 		mensaje = ' Por el momento no te puedo ayudar :( , pero no te preocupes nos comunicaremos lo antes posible :) '
 	}else if(isContain(messageText,'hola')) {
-		mensaje = 'Hola, en que te puedo ayudar'
+		mensaje = 'Hola, en que te puedo ayudar :D '
 	}else if(isContain(messageText,'telefono')){
 		mensaje = 'Claro, puedes comunicarte con nosotros a través de nuestra Banca Telefónica: (01) 311-9001 desde Lima o al 0801-00801 desde provincias.'
 
@@ -62,6 +62,9 @@ function evaluarMensaje(senderID, messageText){
 
 	}else if(isContain(messageText,'rob')|| isContain(massageText, 'perd')){
 		mensaje = 'Comunícate de inmediato a nuestra Banca Telefónica al (01) 311-9000 (Lima) o al 0801-00802 (provincias) y selecciona la opción 0 para bloquearla y evitar que otras personas puedan usarla. La atención es durante las 24 horas del día, todos los días del año. Una vez efectuado el bloqueo recibirás una constancia de la operación realizada al correo electrónico (virtual) o domicilio (físico) que tengas registrado en el banco. También puedes solicitar el recojo en cualquiera de nuestras Tiendas Interbank.'
+	}else if(isContain(messageText,'ayuda')){
+		mensaje = 'Claro que sí te ayudaré'
+
 	}else if(isContain(messageText,'info')){ 
 
 		mensaje = ' Hola que tal si deseas mayor informacion visita nuestra página web \n'
